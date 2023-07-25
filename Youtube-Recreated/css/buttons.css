@@ -1,0 +1,58 @@
+
+  /* transition makes it smooth when hovering over button*/
+.subscribe-button{
+background-color: red;
+color: white;
+width: 100px;
+height: 30px;
+transition: opacity 0.15s;
+}
+
+/*This is a type of psuedo class*/
+/*opacity makes fade in or fade out*/
+.subscribe-button:hover{
+  opacity: 0.8;
+}
+.subscribe-button:active{
+ opacity: 0.5;
+}
+
+/* vertical-align aligns the button to the top of the browser*/
+/* box model is better so the text and box stretch together*/
+.join-button{
+  background-color: white;
+  color: rgb(122, 181, 235);
+  border-color:rgb(122, 181, 235) ;
+  border-width: 1px;
+  border-style: solid;
+  font-weight: bold;
+  transition:background-color 1s, color 1s;
+  vertical-align: top;
+}
+
+.join-button:hover{
+  background-color: rgb(41, 118, 211);
+  color: white;
+}
+
+.join-button:active{
+  opacity: 0.7;
+}
+
+.tweet-button{
+  background-color:rgb(29, 155, 240);
+  color: white;
+  width: 70px;
+  height: 320px;
+  border-radius: 18px;
+  border: none;
+  transition: box-shadow 0.15s;
+  vertical-align: top;
+}
+
+.tweet-button:hover{
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+/*The first value for shadows sets the horizontal position, the second value sets the vertical position, the third value sets a blur*/
+/*The rgba also includes opacity*/
